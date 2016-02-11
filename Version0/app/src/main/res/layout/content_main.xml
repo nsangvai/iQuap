@@ -12,8 +12,41 @@
     tools:context="com.sms.iquap_00.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textClock"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginTop="103dp"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_marginTop="98dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="User Login"
+        android:id="@+id/textView"
+        android:layout_below="@+id/textClock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
+
 </RelativeLayout>
